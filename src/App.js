@@ -73,7 +73,7 @@ class App extends Component {
             click={() => this.deletePersonHandler(index)}
               name={person.name} 
               age={person.age} 
-              key={person.id}
+              key={person.id} // for React to efficiently update everything
               changed={(event) => this.nameChangedHandler(event, person.id)}/>
           })}
           </div> 
